@@ -3,14 +3,15 @@
   <Class Name="COMP12_S2017_Lesson11.Card">
     <Position X="4" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAAAAABAgAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <HashCode>AAAAAABAAAAAAAAAAAAABAgAAAAAAAAAAAAAAAAAgBA=</HashCode>
       <FileName>Card.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="COMP12_S2017_Lesson11.Deck">
     <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAAAAABAAAAAAAAAAAEAE=</HashCode>
       <FileName>Deck.cs</FileName>
     </TypeIdentifier>
   </Class>

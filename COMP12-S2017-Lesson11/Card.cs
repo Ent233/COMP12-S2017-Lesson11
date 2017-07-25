@@ -11,7 +11,7 @@ using System.Text;
  */
 namespace COMP12_S2017_Lesson11
 {
-    public class Card
+    public class Card:ICloneable
     {
         //private instance variables
         private Face _face;
@@ -54,5 +54,9 @@ namespace COMP12_S2017_Lesson11
         //private method
 
         //public method
+        public object Clone()
+        {
+            return new Card(this.Face, this.Suit);
+        }
     }
 }

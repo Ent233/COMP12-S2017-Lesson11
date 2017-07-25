@@ -18,6 +18,10 @@ namespace COMP12_S2017_Lesson11
         {
             Deck deck = new Deck();
             Console.WriteLine(deck.ToString());
+            Console.WriteLine();
+            deck.Shuffle();
+            Console.WriteLine(deck.ToString());
         }
     }
 }
+;
