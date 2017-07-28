@@ -12,7 +12,7 @@ using System.Text;
  */
 namespace COMP12_S2017_Lesson11
 {
-    public class Deck:List<Card>
+    public class Deck:CardList
     {
         //private instance variables
         private Random _random;
@@ -29,16 +29,13 @@ namespace COMP12_S2017_Lesson11
         /// this is the main constructor for deck class
         /// </summary>
         //constructors
-        public Deck()
-        {
-            this._initialize();
-        }
+
         //private methods
         /// <summary>
         /// this is the private mehtod that load 52 cards
         /// also initializes other class variables
         /// </summary>
-        private void _initialize()
+        protected override void _initialize()
         {
             //initialize the random object
             this._random = new Random();
@@ -86,6 +83,14 @@ namespace COMP12_S2017_Lesson11
             }
             
         }
-        
+        public Card Deal1()
+        {
+            Card firstCard = (Card)this[0].Clone();
+            this.RemoveAt(0); // removes the top card
+
+            Console.WriteLine("Deck Contains: " + this.Count + " Cards");
+            return firstCard;
+        }
+
     }
 }

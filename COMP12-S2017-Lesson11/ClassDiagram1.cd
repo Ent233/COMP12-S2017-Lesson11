@@ -11,8 +11,22 @@
   <Class Name="COMP12_S2017_Lesson11.Deck">
     <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAAAAABAAAAAAAAAAAEAE=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAQAAAAABAAAAAAAAAAAEAE=</HashCode>
       <FileName>Deck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="COMP12_S2017_Lesson11.CardList">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CardList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="COMP12_S2017_Lesson11.Hand">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hand.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="COMP12_S2017_Lesson11.Suit">
