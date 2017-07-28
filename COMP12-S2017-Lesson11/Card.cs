@@ -7,7 +7,7 @@ using System.Text;
  * Name:LF
  * Date:July 25,2017
  * Description:card class to be used in the card shuffling and dealing simulation.
- * Version:0.1 - created the suit Enum
+ * Version:0.2 - Add ToString method
  */
 namespace COMP12_S2017_Lesson11
 {
@@ -57,6 +57,11 @@ namespace COMP12_S2017_Lesson11
         public object Clone()
         {
             return new Card(this.Face, this.Suit);
+        }
+        public override string ToString()
+        {
+            string outputString = "The " + this.Face + " of " + this.Suit + "\n";
+            return outputString;
         }
     }
 }

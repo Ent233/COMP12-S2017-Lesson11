@@ -8,7 +8,7 @@ using System.Text;
  * Date: July 27, 2017
  * Description: This is the Hand class
  * It inherits from the CardList class
- * Version: 0.1 - Hand class
+ * Version: 0.2 - Added HighestCards method
  */
 namespace COMP12_S2017_Lesson11
 {
@@ -47,6 +47,18 @@ namespace COMP12_S2017_Lesson11
             }
 
             return outputString;
+        }
+        public void HighestCards()
+        {
+            var max = (from item in this
+                       select item.Face).Max() ;
+            foreach (var item in this)
+            {
+                if (item.Face == max)
+                {
+                    Console.WriteLine(item);
+                }
+            }
         }
     }
 }

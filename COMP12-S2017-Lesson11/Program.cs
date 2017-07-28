@@ -26,15 +26,17 @@ namespace COMP12_S2017_Lesson11
             Console.WriteLine();
 
             
-            hand.Add(deck.Deal1()); // deal one card from the top of the deck
-            Console.WriteLine(hand.ToString());
-            Console.WriteLine();
-            hand.Add(deck.Deal1()); // deal one card from the top of the deck
-            Console.WriteLine(hand.ToString());
-            
+            //hand.Add(deck.Deal1()); // deal one card from the top of the deck
+            //Console.WriteLine(hand.ToString());
+            //Console.WriteLine();
+            //hand.Add(deck.Deal1()); // deal one card from the top of the deck
+            //Console.WriteLine(hand.ToString());
+
 
             // hand = deck.Deal5(); // creates a new Hand object and assigns it to hand
-
+            hand.AddRange(deck.Deal5());
+            Console.WriteLine(hand.ToString());
+            hand.HighestCards();
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
  * Date:July 25,2017
  * Description:this is the Deck class which inherits from the collection
  * this calss creates a new list type - Card
- * Version:0.3 - Added public shuffle method
+ * Version:0.4 - Added Deal5 method
  */
 namespace COMP12_S2017_Lesson11
 {
@@ -91,6 +91,17 @@ namespace COMP12_S2017_Lesson11
             Console.WriteLine("Deck Contains: " + this.Count + " Cards");
             return firstCard;
         }
-
+        public List<Card> Deal5()
+        {
+            List<Card> hand = new List<Card>();
+            for (int i=1;i<=5;i++)
+            {
+                Card firstCard = (Card)this[0].Clone();
+                this.RemoveAt(0);
+                hand.Add(firstCard);
+            }
+            Console.WriteLine("Deck Contains: " + this.Count + " Cards");
+            return hand;
+        }
     }
 }
